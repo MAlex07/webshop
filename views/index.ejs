@@ -9,7 +9,83 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1><%= title %></h1>
-    Hello EJS!
+    <h1>Nem a Bárdi Autó</h1>
+
+     <form class="category-form">
+ 
+        <label class="category-card">
+            <input type="radio" name="kategoria" value="motorolaj">
+ 
+            <span class="category-title">Motorolaj</span>
+ 
+            <img
+                src="https://www.suzuki-alkatreszek.hu/grafika/termekek/Olaj/petronas-syntium-3000-fr-5w30_1l.jpg"
+                alt="Motorolaj"
+            >
+        </label>
+ 
+        <label class="category-card">
+            <input type="radio" name="kategoria" value="olajszuro">
+ 
+            <span class="category-title">Olajszűrő</span>
+ 
+            <img
+                src="https://s13emagst.akamaized.net/products/59928/59927481/images/res_a8302a7b46786d52cc2a5a6800d64c8c.jpg"
+                alt="Olajszűrő"
+            >
+        </label>
+ 
+        <label class="category-card">
+            <input type="radio" name="kategoria" value="legszuro">
+ 
+            <span class="category-title">Légszűrő</span>
+ 
+            <img
+                src="https://tse2.mm.bing.net/th/id/OIP.8PAgp9a0oT3rHjB2aLvzfgHaFb?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Légszűrő"
+            >
+        </label>
+ 
+    </form>
+    
+    <h2>Vásárlói adatok</h2>
+    
+    <form>
+        <h3>Személyes adatok</h3><br>
+        <label>Név:</label>
+        <input type="text" name="nev"><br>
+        <label>Telefonszám:</label>
+        <input type="text" name="telefon"><br>
+
+        <h3>Számlázási adatok</h3><br>
+        <label>Város</label>
+        <input type="text" name="szaml_varos"><br>
+        <label>Irányítoszám</label>
+        <input type="text" name="szaml_iranyito"><br>
+        <label>Utca és Házszám</label>
+        <input type="text" name="szaml_utca"><br>
+        
+        <h3>Szállítási adatok</h3><br>
+        <label>Város</label>
+        <input type="text" name="szall_varos"><br>
+        <label>Irányítoszám</label>
+        <input type="text" name="szall_iranyito"><br>
+        <label>Utca és Házszám</label>
+        <input type="text" name="szall_utca"><br>
+
+        <h3>Kuponkód (opcionális)</h3><br>
+        <label>Kuponkód</label>
+        <input type="button" name="kupon"><br>
+
+        <h3>Fizetési adatok</h3><br>
+        <label>Bankkártya száma</label>
+        <input type="text" name="bankkartya"><br>
+        <label>Lejárata</label>
+        <input type="text" name="lejar"><br>
+        <label>CVC</label>
+        <input type="text" name="cvc"><br>
+        
+    </form>
+
 </body>
 </html>
